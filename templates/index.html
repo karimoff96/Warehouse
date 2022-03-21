@@ -25,16 +25,29 @@
         </tr>
         </thead>
         <tbody>
-         {% for p in warehouses %}
-        <tr>
-            <th scope="row">{{ p.id }}</th>
-            <td>{{ p.material_id }}</td>
-            <td>{{ p.remainder }}</td>
-            <td>{{ p.price }}</td>
-        </tr>
+        {% for p in warehouses %}
+            <tr>
+                <th scope="row">{{ p.id }}</th>
+                <td>{{ p.material_id }}</td>
+                <td>{{ p.remainder }}</td>
+                <td>{{ p.price }}</td>
+            </tr>
         {% endfor %}
         </tbody>
     </table>
+
+    <form>
+        <div class="form-row">
+            <div class="col">
+                <input type="text" class="form-control" name='1' placeholder="First name">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" name="2" placeholder="Last name">
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+    </form>
+
 </div>
 
 <!-- Optional JavaScript -->

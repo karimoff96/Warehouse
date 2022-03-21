@@ -8,7 +8,7 @@ class Product(models.Model):
     updated = models.DateTimeField(auto_now=True)
     image = models.ImageField(upload_to='media', blank=True, null=True)
     description = models.TextField(blank=True)
-    available = models.BooleanField(default=True)
+
 
     def __str__(self):
         return self.name
@@ -20,7 +20,6 @@ class Materials(models.Model):
     updated = models.DateTimeField(auto_now=True)
     image = models.ImageField(upload_to='media', blank=True, null=True)
     description = models.TextField(blank=True)
-    available = models.BooleanField(default=True)
 
     def __str__(self):
         return self.name
@@ -32,7 +31,6 @@ class Product_materials(models.Model):
     quantity = models.FloatField(default=0, null=True)
     image = models.ImageField(upload_to='media', blank=True, null=True)
     description = models.TextField(blank=True)
-    available = models.BooleanField(default=True)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 
