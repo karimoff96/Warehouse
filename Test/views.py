@@ -1,8 +1,4 @@
-import json
-from django.core import serializers
-from django.shortcuts import render
 from .models import *
-from django.http import HttpResponse
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 
