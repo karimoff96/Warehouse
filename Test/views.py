@@ -6,6 +6,7 @@ from rest_framework.decorators import api_view
 @api_view(['GET', 'POST'])  #command for handling requests from Postman
 def check_view(request):
     if request.method == 'POST':
+        print(request)
         needle = {}
         fact = {}
         material_ids = []
