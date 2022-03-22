@@ -9,7 +9,6 @@ class Product(models.Model):
     image = models.ImageField(upload_to='media', blank=True, null=True)
     description = models.TextField(blank=True)
 
-
     def __str__(self):
         return self.name
 
@@ -47,3 +46,6 @@ class Warehouses(models.Model):
     available = models.BooleanField(default=True)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
+
+
+#added unrequired and unused Fields just in case, for the future development of Project
